@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango</title>
+    <style>
+        /* Existing styles */
+
+.subcategory {
+    display: none;
+    margin-left: 20px; /* Indent subcategories */
+}
+
+.subcategory.collapsed {
+    display: block;
+}
+
+.subcategory .post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.subcategory .post:last-child {
+    border-bottom: none;
+}
+
+.subcategory .post h3 {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.subcategory .post-meta {
+    color: #000000;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.subcategory .post-meta .author::after {
+    content: " | ";
+}
+
+.subcategory .post-meta .date {
+    font-weight: bold;
+}
+
+.subcategory .excerpt {
+    line-height: 1.6;
+}
+
+.subcategory .post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+body{
+    background: radial-gradient(circle at 49.8% 44.4%, rgb(251, 230, 59) 0%, rgb(161, 255, 63) 90%);
+}
+
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <!-- Sidebar content goes here -->
+        <ul>
+            <li>
+                <a href="#" onclick="toggleSubcategory('gadgets')">Mango</a>
+                <ul class="subcategory" id="gadgets">
+                    <li>
+                        <div class="post">
+                            <img src="https://rukminim2.flixcart.com/image/850/1000/l16rde80/plant-sapling/a/1/w/no-annual-yes-glenn-grafted-mango-plant-1-exotica-glenn-original-imagcsh2gpnhwrk3.jpeg?q=90&crop=false" width="300" height="300" alt="Smartphone Trends">
+                            <img src="https://www.jiomart.com/images/product/original/590000453/mango-safeda-1-kg-product-images-o590000453-p590000453-0-202203150236.jpg?im=Resize=(1000,1000)" width="300" height="300" alt="">
+                            <h3>Banginapalli Mango</h3>
+                            <div class="post-meta">
+                                <span class="author"><b>Big basket</b></span>
+                                <span class="date">March 8, 2024</span>
+                            </div>
+                            <p class="excerpt">A mango is an edible stone fruit produced by the tropical tree Mangifera indica. It originated from the region between northwestern Myanmar, Bangladesh, and northeastern India.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post">
+                            <img src="https://gallafoods.com/wp-content/uploads/2016/11/Totapuri_mango1.jpg" width="300" height="300" alt="Top Wearable Devices">
+                            <img src="https://img1.exportersindia.com/product_images/bc-full/2021/6/8892532/fresh-totapuri-mango-1623083236-5849776.jpeg" width="300" height="300" alt="">
+                            <h3>Chittor Mango</h3>
+                            <div class="post-meta">
+                                <span class="author"><b>Freshdelight</b></span>
+                                <span class="date">March 9, 2024</span>
+                            </div>
+                            <p class="excerpt">Mango is known as the “King of fruit” in India and is one of the most loved fruits in the country. India is the largest producer and exporter of mangoes in the world, and the fruit is an essential part of Indian culture and cuisine. With over 1000 varieties of mangoes grown in India, it’s no surprise that each state has its unique variety of mango. Also, mangoes are not just a delicious summer fruit, but also a source of various health benefits.</p>
+                        </div>
+                    </li>
+                    <!-- Add more posts here -->
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <script >
+        // Function to toggle visibility of subcategories
+function toggleSubcategory(subcategory) {
+    const subcategoryElement = document.getElementById(subcategory);
+    subcategoryElement.classList.toggle('collapsed');
+}
+
+    </script>
+</body>
+</html>
